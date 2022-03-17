@@ -12,7 +12,7 @@ def adivinador_pc (x):
     while respuesta != "c":
         # Se genera una predicción
         if limite_inferior != limite_superior:
-           prediccion = random.randint(limite_inferior, limite_superior)
+            prediccion = random.randint(limite_inferior, limite_superior)
         else:
             prediccion = limite_inferior
 
