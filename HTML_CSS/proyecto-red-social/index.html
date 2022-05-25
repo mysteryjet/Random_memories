@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a47e85d24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/pumapp.png" class="logo" alt="logo">
+            <ul>
+                <li>
+                    <img src="images/notification.png" alt="notificacion">
+                </li>
+                <li>
+                    <img src="images/inbox.png" alt="inbox">
+                </li>
+                <li>
+                    <img src="images/video.png" alt="video">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="foto perfil">
+            </div>
+        </div>
+
+        <!-- MENU DE OPCIONES -->
+        <div class="settings-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="foto de perfil">
+                    <div>
+                        <p>Manuel Gualito</p>
+                        <a href="#">Ver tu perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="foto de perfil">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="#">Reporta bugs, ayudanos a mejorar</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Opciones y Privacidad <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Ayuda y Soporte <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Accesibilidad <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Cerrar Sesión <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>        
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- LADO IZQUIERDO -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="noticias"> Últimas Noticias</a>
+                <a href="#"><img src="images/friends.png" alt="amigos"> Amigos</a>
+                <a href="#"><img src="images/group.png" alt="grupos"> Grupos</a>
+                <a href="#"><img src="images/marketplace.png" alt="marketplace"> Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="mirar"> Mirar</a>
+                <a href="#"> Ver Más</a>
+            </div>
+            <div class="shortcut-links">
+                <p>
+                    Tus atajos
+                </p>
+                <a href="#"><img src="images/shortcut-1.png"> Desarroladores Web</a>
+                <a href="#"><img src="images/shortcut-2.png"> Diseñador Web</a>
+                <a href="#"><img src="images/shortcut-3.png"> Full Stack</a>
+                <a href="#"><img src="images/shortcut-4.png"> WebSite</a>
+            </div>
+        </div>
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Publicar Historia</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Fulanita</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Merengano</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Fulanita</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Perengano</p>
+                </div>
+            </div>
+            <!-- PUBLICACIONES -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="foto de perfil">
+                    <div>
+                        <p>Manuel Gualito</p>
+                        <small>Público <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="En qué piensas, Manuel?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Video en Vivo</a>
+                        <a href="#"><img src="images/photo.png"> Foto/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Cómo me siento/Actividad</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="foto de perfil">
+                        <div>
+                            <p>Manuel Gualito</p>
+                            <span>Mayo 24 2022, 5:27 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit, <span>amet consectetur adipisicing elit.</span> Id at corrupti obcaecati quos dignissimos neque, dolorum dolore assumenda saepe officia delectus aperiam sunt suscipit, ea possimus a voluptate, modi praesentium.</p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="foto de perfil">
+                        <div>
+                            <p>Manuel Gualito</p>
+                            <span>Mayo 22 2022, 1:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit, <span>amet consectetur adipisicing elit.</span> Id at corrupti obcaecati quos dignissimos neque, dolorum dolore assumenda saepe officia delectus aperiam sunt suscipit, ea possimus a voluptate, modi praesentium.</p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 30</div>
+                        <div><img src="images/comments.png"> 15</div>
+                        <div><img src="images/share.png"> 40</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="foto de perfil">
+                        <div>
+                            <p>Manuel Gualito</p>
+                            <span>Mayo 21 2022, 9:07 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit, <span>amet consectetur adipisicing elit.</span> Id at corrupti obcaecati quos dignissimos neque, dolorum dolore assumenda saepe officia delectus aperiam sunt suscipit, ea possimus a voluptate, modi praesentium.</p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 10</div>
+                        <div><img src="images/comments.png"> 5</div>
+                        <div><img src="images/share.png"> 2</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Cargar más </button>
+        </div>
+        <!-- LADO DERECHO -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Eventos</h4>
+                <a href="#">Ver Todos</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>24</h3>
+                    <span>Mayo</span>
+                </div>
+                <div class="right-event">
+                    <h4>Entrega de proyecto final 1</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> FES Cuautitlán</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>27</h3>
+                    <span>Mayo</span>
+                </div>
+                <div class="right-event">
+                    <h4>Entrega de proyecto final 2</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> FES Cuautitlán</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Anuncios</h4>
+                <a href="#">Cerrar</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversaciones</h4>
+                <a href="#">Esconder Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Fulanita de Tal</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Merengano</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Fulana de Tal</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2022 - The Sims</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
