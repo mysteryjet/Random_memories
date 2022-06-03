@@ -3,15 +3,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
-.container-fluid {
-    padding: 3% 15%;
-}
-
 h1 {  
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;  
@@ -31,20 +22,35 @@ h3 {
 p {
     color: #8f8f8f;
 }
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    padding: 5% 25%;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
 /* imagen del titulo */
-.celular {
+.title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
 /* FEATURES SECTION  */
 #features {
     padding: 7%  15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box {
     text-align: center;
-    padding: 5%;
+    padding: 4.5%;
 }
 
 .feature-box p {
@@ -71,12 +77,13 @@ p {
 } 
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 0 50px;
 }
 
 .nav-link {
     font-size: 1.2rem;
     font-family: 'Roboto';
+
 }
 
 /* botones de descargar */
@@ -86,16 +93,20 @@ p {
 
 /* TESTIMONAL SECTION */
 #testimonials {
-    padding: 7% 15%;
     text-align: center;
     background-color: #ef8172;
     color: #fff;
+    position: relative;
 }
 
 .testimonial-image {
     width: 10%;
     border-radius: 50%;
     margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
 }
 
 #press {
@@ -108,3 +119,64 @@ p {
     width: 15%;
     margin: 20px 20px 50px;
 }
+
+/* PRICING SECTION */
+#pricing {
+padding: 100px;
+text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* CALL TO ACTION SECTION */
+#cta {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+#cta h3 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+/* FOOTER */
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #fff;
+    color: #8f8f8f;
+}
+
+.social-icon {
+    margin: 20px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff4c68;
+}
+
+::selection {
+    color: #ff4c68;
+    background-color: #8f8f8f;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+        padding: 0% 20%;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
+
