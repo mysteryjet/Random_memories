@@ -1,0 +1,52 @@
+/* Center the game board */
+#board {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style the game squares */
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 60px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  
+  /* Style the X and O markers */
+  .square.x::before {
+    content: "X";
+    color: #f00;
+  }
+  
+  .square.o::before {
+    content: "O";
+    color: #00f;
+  }
+  
+  /* Style the status message */
+  #status {
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Style the reset button */
+  #reset {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

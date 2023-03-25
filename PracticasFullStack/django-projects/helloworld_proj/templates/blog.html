@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+{% for post in posts %}
+    {% if post.post_number > 1 %}
+        <h1>{{ post.author| capfirst }}</h1>
+        <p>{{post.title }}</p>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

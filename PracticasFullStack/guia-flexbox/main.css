@@ -1,0 +1,33 @@
+.container {
+    margin: 0 auto;
+    background-color: rgb(255, 70, 172);
+    padding: 10px;
+    border: solid 10px rgb(129, 10, 84);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+    background-color: aqua;
+    border: 10px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin:0 5px;
+    /* flex-grow: 1; */
+
+
+}
+
+.item-1 {
+    /* todos los elementos trataran de contraerse a la misma proporcion de su contenedor */
+    /* flex-shrink: 2; */
+    /* flex-basis: 100px; */
+    /* flex: [flex-grow] [flex-shrink][flex-basis];
+    por defecto son: flex: 0 1 auto; */
+    /* align-self: center; */
+}
+
+.item-2 {
+    align-self: baseline;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .container {
+            display: flex;
+            width: 700px;
+            height: 400px;
+
+            /* esto actua sobre el main axis o eje X */
+            /* justify-content: space-around; */
+            /* esto actua sobre el cross axis o eje y */
+            /* align-items: flex-start; */
+            /* esto actua sobre el cross axis o eje y y requiere de flexflow */
+            /* flex-flow: wrap row;
+            align-content: flex-start; */
+            /* gap: 10px; */
+            
+        }
+        .container > div{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">Logo</div>
+        <div class="item-2">Menu principal</div>
+        <div class="item-3">Búsqueda</div>
+        <div class="item-4">Login</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1 {
+    background-color: red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+p { 
+    background-color: blue;
+    display: inline;
+}
+span {
+    background-color: green;
+    display: block;
+    width: 100px;
+    height: 100px;
+}

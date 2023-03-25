@@ -1,0 +1,48 @@
+body {
+    background: green;
+}
+body {
+    background:url(https://img.freepik.com/vector-gratis/coleccion-iconos-coloridos-frutas-bayas_1284-20043.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background: rgb(255, 80, 80);
+    color: blueviolet;
+    border: 5px dashed blue;
+    font-family: "Roboto";
+
+}
+
+li {
+    border: 4px solid blue;
+}
+
+#selector {
+    background: red;
+}
+
+.underline {
+    background: purple;
+    text-decoration: underline;
+}
+
+p {
+    font-family: "tahoma";
+    font-size: 1.7em;
+    text-decoration: underline;
+    line-height: 2;
+}
+span {
+    font-weight: bold;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: overline;
+}
+h3{
+    font-size: 32px;
+    text-align: center;
+}
