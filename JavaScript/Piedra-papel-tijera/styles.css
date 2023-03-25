@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#293462;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.elemento {
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    line-height: 2;
+    width: 300px;
+    height: 100;
+}
+
+
+
+.score {
+    margin: 50px;
+    font-family: 'Monofett', cursive;
+    text-shadow: 3px #232931;
+    font-size: 8rem;
+    color:#F24C4C ;
+    text-align: center;
+}
+
+.humano, .elemento p {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #EC9B3B;
+    text-align: center;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #827397;
+    opacity: 0.5;
+}
+
+img {
+    width: 50%;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 5%;
+    color: #F7D716;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.myButton {
+    margin: 20px;
+	background-color:#EC9B3B;
+	border-radius:28px;
+	border:1px solid #d61c4d;
+	display:inline-block;
+	cursor:pointer;
+	color:#293462;
+	font-family: 'Poppins', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    text-align: center;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background-color:#f77e21;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
